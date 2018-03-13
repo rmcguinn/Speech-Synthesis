@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color:#3BC1AC;
+  background:#3BC1AC;
   display:flex;
   min-height: 100vh;
   align-items: center;
@@ -52,7 +52,6 @@ h1 {
 
 }
 
-.voiceinator input,
 .voiceinator button,
 .voiceinator select,
 .voiceinator textarea {
@@ -70,8 +69,39 @@ textarea {
   height: 20rem;
 }
 
-input[type="select"] {
+label {
+  font-size: 1.8em;
+  font-family: 'Pacifico', cursive;
+}
 
+.Rate {
+  margin-bottom: 30px;
+}
+
+.voiceinator input {
+  margin-bottom: 50px;
+  display: block;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 3px;
+  background: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #f7f7f7;
+  border: 3px solid #ffc600;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .voiceinator button {
